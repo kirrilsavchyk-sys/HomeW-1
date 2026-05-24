@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+    cout << "Vvedit pershe chyslo: ";
+    cin >> a;
+    cout << "Vvedit druge chyslo: ";
+    cin >> b;
+
+    cout << "Riznytsia: " << a - b << endl;
+    cout << "Dobutok: " << a * b << endl;
+
+    return 0;
+}
