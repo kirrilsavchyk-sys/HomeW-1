@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float a = 0.0001; 
+    double b = 24.33e5;
+    double pi = 3.14159265;
+    double e = 2.71828;
+    double sq5 = sqrt(5.0);
+    double ln100 = log(100.0);
+
+    cout << "10^-4 = " << a << endl;
+    cout << "24.33E5 = " << b << endl;
+    cout << "pi = " << pi << endl;
+    cout << "e = " << e << endl;
+    cout << "sqrt(5) = " << sq5 << endl;
+    cout << "ln(100) = " << ln100 << endl;
+
+    return 0;
+}
