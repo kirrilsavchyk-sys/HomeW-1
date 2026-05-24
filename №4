@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double m1 = 1000;
+    double m2 = 5000;
+    double r = 50;
+    double g = 6.673e-11; // гравітаційна стала
+    
+    double f = g * (m1 * m2) / (r * r);
+    cout << "F = " << f << endl;
+
+    return 0;
+}
