@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+    cout << "Vvedit dva chysla cherez probil: ";
+    cin >> a >> b;
+
+    double sr_aryfm = (a + b) / 2.0;
+    double sr_garmon = (2.0 * a * b) / (a + b);
+
+    cout << "Seredne aryfmetychne: " << sr_aryfm << endl;
+    cout << "Seredne garmonichne: " << sr_garmon << endl;
+
+    return 0;
+}
