@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x;
+    cout << "Vvedit x: ";
+    cin >> x;
+
+    // --- БЕЗ МАТЕМАТИЧНИХ ФУНКЦІЙ ---
+    int cila = x;
+    double drob = x - cila;
+    
+    int floor_x = cila;
+    if (x < 0 && drob != 0) {
+        floor_x = cila - 1;
+    }
+    
+    int ceil_x = cila;
+    if (x > 0 && drob != 0) {
+        ceil_x = cila + 1;
+    }
+    
+    int round_x;
+    if (x >= 0) {
+        round_x = x + 0.5;
+    } else {
+        round_x = x - 0.5;
+    }
+
+    cout << "Cila chastyna: " << cila << endl;
+    cout << "Drobova chastyna: " << drob << endl;
+    cout << "Floor: " << floor_x << endl;
+    cout << "Ceil: " << ceil_x << endl;
+    cout << "Round: " << round_x << endl;
+
+    // --- З МАТЕМАТИЧНИМИ ФУНКЦІЯМИ ---
+    cout << "\n--- Z math.h ---" << endl;
+    double intpart;
+    double fracpart = modf(x, &intpart);
+
+    cout << "Cila chastyna: " << trunc(x) << endl;
+    cout << "Drobova chastyna: " << fracpart << endl;
+    cout << "Floor: " << floor(x) << endl;
+    cout << "Ceil: " << ceil(x) << endl;
+    cout << "Round: " << round(x) << endl;
+
+    return 0;
+}
